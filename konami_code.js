@@ -11,9 +11,6 @@ function init() {
         }
         key = i++;
       }
-      else {
-        key = 0;
-      }
     });
   }
 }
