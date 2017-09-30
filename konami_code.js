@@ -15,22 +15,7 @@ function init() {
         key = 0;
       }
     });
-  }  
-}
-
-
-
-  document.body.addEventListener('keydown', function(event) {
-    if(code[key] === event.which) {
-      if (key === 9) {
-        alert('Congrats! You found the Konami code!');
-      }
-      key++;
-    }
-    else {
-      key = 0;
-    }
-  });
+  }
 }
 
 /*
