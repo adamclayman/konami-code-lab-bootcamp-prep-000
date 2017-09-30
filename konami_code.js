@@ -14,7 +14,7 @@ function init() {
     else {
       key = 0;
     }
-}
+});
 /*
   document.body.addEventListener('keydown', function(event) {
     if (event.which === '38') {
