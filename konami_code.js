@@ -18,7 +18,7 @@ function init() {
   document.body.addEventListener('keydown', function(event) {
     if (event.which === '38') {
       for (i = 1; i < code.length; i++) {
-        if (charListener(i) === code[i]) {
+        if (event[i] === code[i]) {
           continue;
         }
         else return null;
