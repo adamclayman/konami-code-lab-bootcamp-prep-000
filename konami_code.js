@@ -9,7 +9,7 @@ function init() {
     if (code[key] === event.keyCode) {
       key++;
       if (key === 10) {
-        alert(`Congrats! You found the Konami code!`);
+        window.alert(`Congrats! You found the Konami code!`);
       }
     }
     else {
