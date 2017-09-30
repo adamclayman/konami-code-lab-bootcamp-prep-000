@@ -1,19 +1,25 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-let key = 0;
+ 
+// Keep track of index outside of the event handler.
+let index = 0;
 
 function init() {
-  // write your code within this function declaration
-  document.addEventListener('keydown', function(event) {
-    if (event.which === code[key]) { // Check if event input matches code at the key index
-
-      if (key === 9) { // If the event.which and code[key] successfully match 10 times, execute 'success' code
-        window.alert('Congrats! You found the Konami code!');
-      }
-      key++; // increment the key index for each successful match
-    }
-    else {
-      key = 0; // for any failed match, reset the global key counter to 0
-    }
-  });
+  document.addEventListener('keydown', onKeyDownHandler(event));
 }
-init();
+ 
+// This is the function that would be invoked by the event listener.
+function onKeyDownHandler(e) {
+  const key = parseInt(e.detail || e.which);
+ 
+  if (key === alphabet[index]) {
+    index++;
+ 
+    if (index === alphabet.length) {
+      alert("Hurray!");
+ 
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
+}
