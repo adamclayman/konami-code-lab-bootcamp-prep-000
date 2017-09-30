@@ -22,7 +22,6 @@ function init() {
     if (event.which === '38') {
       for (i = 1; i < code.length; i++) {
         if (Object.keys(event)[i] === code[i]) {
-          console.log(Object.keys(event)[i]);
           continue;
         }
         else return null;
