@@ -11,20 +11,8 @@ function init() {
       key++;
     }
   });
-
 }
 
-
-
-
-
-
-
-
-
-
-
-  
 /*
   document.body.addEventListener('keydown', function(event) {
     // Increment key if the keycode matches.
