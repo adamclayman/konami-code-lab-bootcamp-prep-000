@@ -3,10 +3,9 @@ let key = 0;
 
 function init() {
   // Write your JavaScript code inside the init() function
-  const input = document.querySelector('input');
 
   for (let i = 0; i < code.length; i++) {
-    input.addEventListener('keydown', function charListener(e) {
+    document.querySelector('input').addEventListener('keydown', function charListener(e) {
       if(code[i] === e.which && key === i) {
         if (key === 9) {
           alert('Congrats! You found the Konami code!');
