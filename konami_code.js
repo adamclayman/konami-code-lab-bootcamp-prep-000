@@ -7,10 +7,10 @@ function init() {
   document.body.addEventListener('keydown', function(event) {
     // Increment key if the keycode matches.
     if (code[key] === event.keyCode) {
-      key++;
       if (key === 9) {
         alert(`Congrats! You found the Konami code!`);
       }
+      key++;
     }
     else {
       key = 0;
