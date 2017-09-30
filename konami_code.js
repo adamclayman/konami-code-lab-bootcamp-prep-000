@@ -8,8 +8,8 @@ function init() {
     // Increment key if the keycode matches.
     if (code[key] === event.keyCode) {
       key++;
-      if (key === 10) {
-        window.alert(`Congrats! You found the Konami code!`);
+      if (key === 9) {
+        alert(`Congrats! You found the Konami code!`);
       }
     }
     else {
