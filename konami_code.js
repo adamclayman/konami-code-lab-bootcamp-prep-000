@@ -21,7 +21,7 @@ function init() {
   document.body.addEventListener('keydown', function(event) {
     if (event.which === '38') {
       for (i = 1; i < code.length; i++) {
-        console.log(event[i]);
+        console.log(Object.keys(event)[i]);
         if (Object.keys(event)[i] === code[i]) {
           continue;
         }
