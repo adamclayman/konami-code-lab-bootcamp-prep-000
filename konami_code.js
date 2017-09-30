@@ -7,7 +7,7 @@ function init() {
     if (e.which === code[key]) {
       key++;
       if (key === 9) {
-        alert('Congrats! You found the Konami code!');
+        window.alert('Congrats! You found the Konami code!');
       }
     }
     else {
