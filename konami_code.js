@@ -27,4 +27,3 @@ function init() {
     alert('Congrats! You found the Konami code!');
   })
 }
-init();
