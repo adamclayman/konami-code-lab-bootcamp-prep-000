@@ -12,7 +12,7 @@ function init() {
       }
     }
     else {
-      key = 0
+      key = 0;
     }
 }
 /*
