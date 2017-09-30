@@ -5,10 +5,11 @@ function init() {
   // write your code within this function declaration
   document.addEventListener('keydown', function(e) {
     if (e.which === code[key]) {
-      key++;
+
       if (key === 9) {
         window.alert('Congrats! You found the Konami code!');
       }
+      key++;
     }
     else {
       key = 0;
