@@ -19,8 +19,8 @@ function onKeyDownHandler(e) {
 
       index = 0;
     }
-  } 
-  else 
+  }
+  else
   {
     index = 0;
   }
