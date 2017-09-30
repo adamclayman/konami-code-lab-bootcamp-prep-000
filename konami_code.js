@@ -4,6 +4,7 @@ function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', function(e) {
     if (e.which === '38') {
+      e.stopPropagation();
       for (i = 1; i < code.length; i++) {
         if (charListener(i) === code[i]) {
           continue;
@@ -18,8 +19,12 @@ function init() {
 function charListener(i) {
   document.body.addEventListener('keydown', function(e) {
     if (e.which === code[i]) {
+      e.stopPropagation();
       return e.which;
     }
-    else return null;
+    else {
+      e.stopPropagation();
+      return null;
+    }
   });
 }
