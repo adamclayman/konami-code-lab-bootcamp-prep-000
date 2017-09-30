@@ -13,7 +13,6 @@ function init() {
     else {
       key = 0;
     }
-    
   });
 }
 
