@@ -1,21 +1,5 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
-function charListener(i) {
-
-/*
-  document.body.addEventListener('keydown', function(event) {
-    if (event.which === code[i]) {
-      event.stopPropagation();
-      return event.which;
-    }
-    else {
-      event.stopPropagation();
-      return null;
-    }
-  });
-*/
-}
-
 function init() {
   // Write your JavaScript code inside the init() function
 
@@ -26,7 +10,7 @@ function init() {
         if (key === 10) {
           alert(`Congrats! You found the Konami code!`);
         }
-    } 
+    }
     else {
       key = 0
     }
