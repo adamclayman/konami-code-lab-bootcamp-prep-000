@@ -22,7 +22,7 @@ function init() {
     if (event.which === '38') {
       for (i = 1; i < code.length; i++) {
         console.log(event[i]);
-        if (event[i] === code[i]) {
+        if (Object.keys(event)[i] === code[i]) {
           continue;
         }
         else return null;
