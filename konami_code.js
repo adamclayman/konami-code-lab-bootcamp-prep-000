@@ -19,7 +19,6 @@ function charListener(i) {
 function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', function(event) {
-    console.log(event);
     if (event.which === '38') {
       for (i = 1; i < code.length; i++) {
         console.log(event[i]);
